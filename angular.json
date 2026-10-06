@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "prolion-test": {
+    "angular-code-challenge": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/prolion-test",
+            "outputPath": "dist/angular-code-challenge",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "prolion-test:build:production"
+              "buildTarget": "angular-code-challenge:build:production"
             },
             "development": {
-              "buildTarget": "prolion-test:build:development"
+              "buildTarget": "angular-code-challenge:build:development"
             }
           },
           "defaultConfiguration": "development"
